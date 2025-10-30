@@ -49,28 +49,31 @@ Users can search for cities to get current weather conditions — including temp
    ```bash
    git clone https://github.com/Abu4956/Weather-App.git
    cd Weather-App
-Install dependencies
 
-bash
-Copy code
-npm install
-Add your OpenWeatherMap API key
+2. Install dependencies
+
+  ```bash
+   Copy code
+   npm install
+```
+3. Add your OpenWeatherMap API key
 
 In the .env or configure directly in the file (make sure not to expose it in production!)
+  ```bash
+  env
+  VITE_OPENWEATHER_API_KEY=your_api_key_here
+```
+4. Start the development server
 
-env
-Copy code
-VITE_OPENWEATHER_API_KEY=your_api_key_here
-Start the development server
+  ```bash
+   npm run dev
+```
+   Then open http://localhost:3000 (or the port shown) in your browser.
 
-bash
-Copy code
-npm run dev
-Then open http://localhost:3000 (or the port shown) in your browser.
+5. Build for production
 
-Build for production
+ ```bash
 
-bash
-Copy code
-npm run build
+  npm run build
+```
 The output will be in dist/.
