@@ -77,3 +77,14 @@ In the .env or configure directly in the file (make sure not to expose it in pro
   npm run build
 ```
 The output will be in dist/.
+---
+👨‍💻 Author
+
+Abu Obaida
+📧 abuobaidakopaganj@gmail.com
+ | 📱 7800260625
+
+📄 License
+
+This project is open source and available under the MIT License
+.
