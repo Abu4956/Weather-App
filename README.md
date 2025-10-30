@@ -14,3 +14,63 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+# Weather-App 🌤️
+
+A responsive and interactive weather application built with React, Vite, and TailwindCSS.  
+Users can search for cities to get current weather conditions — including temperature (°C/°F), humidity, wind, visibility and sunrise/sunset times. The app also presents dynamically changing backgrounds based on weather and time of day.
+
+---
+
+## 🔍 Features
+
+- Search for any city (with type-ahead suggestions) and fetch current weather using the [OpenWeatherMap API](https://openweathermap.org/)  
+- Toggle temperature unit between Celsius (°C) and Fahrenheit (°F)  
+- Visual icons and readable values for key weather metrics: humidity, wind, visibility, sunrise & sunset  
+- Dynamic background scenes that adapt to the weather condition and time of day  
+- Clean UI built with TailwindCSS and mobile-first responsiveness  
+
+---
+
+## 🧩 Tech Stack
+
+- **Frontend**: React (functional components + hooks)  
+- **Bundler / Dev Environment**: Vite  
+- **Styling**: TailwindCSS  
+- **API**: OpenWeatherMap (weather & geocoding endpoints)  
+- **Utilities**: Helper functions for conversion & formatting (temperature, visibility, wind direction etc.)  
+
+---
+
+## 🛠️ Setup & Running Locally
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/Abu4956/Weather-App.git
+   cd Weather-App
+Install dependencies
+
+bash
+Copy code
+npm install
+Add your OpenWeatherMap API key
+
+In the .env or configure directly in the file (make sure not to expose it in production!)
+
+env
+Copy code
+VITE_OPENWEATHER_API_KEY=your_api_key_here
+Start the development server
+
+bash
+Copy code
+npm run dev
+Then open http://localhost:3000 (or the port shown) in your browser.
+
+Build for production
+
+bash
+Copy code
+npm run build
+The output will be in dist/.
